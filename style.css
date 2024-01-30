@@ -1,0 +1,57 @@
+body{
+	background-color:#ebeae8;
+}
+
+.bg-img{
+	background:url("images/ebook.png");
+	height:72vh;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}
+.book{
+	position:absolute;
+	top:50%;
+	right:20px;
+	color:#232D3F;
+}
+
+.shade{
+	position:absolute;
+	background-color: rgba(248, 248, 248, 0.182);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+} 
+
+.crd-ho:hover{
+	background-color:#FFFBF5;
+	
+}
+
+.gap{
+	gap:12px;
+}
+.navbg{
+	background-color:#1D5D9B;
+}
+.navbar .nav-item .nav-link:hover{
+	border-radius:8px;
+	background-color:#F8F6F4;
+	color:#1D5D9B;
+}
+.borderline{
+	height:6px;
+	background-color:#1D5D9B;
+}
+
+.e-books{
+	width:200px;
+	height:250px;
+}
+.pointer{
+	cursor:pointer;
+}
+

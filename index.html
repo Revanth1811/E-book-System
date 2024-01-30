@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ebook System-e-book</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+	crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<!-- <%@include file="allcomponents/navbar.jsp"%> -->
+    <div class="container-fluid borderline"></div>
+
+<div class="conatainer-fluid  p-3 bg-white" id="bar">
+	<div class="row justify-content-between ">
+		<div class="col-md-3">
+			<h2 class="text-success">
+				<i class="bi bi-journal-text"></i> E-Book
+			</h2>
+		</div>
+
+		<div class="col-md-3">
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search"
+					aria-label="Search">
+				<button class="btn btn-primary" type="submit">Search</button>
+			</form>
+		</div>
+
+		<div class="col-md-3">
+			<form class="d-flex gap" role="search">
+				<a href="login.html" class="btn btn-primary" type="submit"><i class="bi bi-person-fill-add"></i> Login</a>
+				<a href="register.html" class="btn btn-success" type="submit"><i class="bi bi-box-arrow-in-right"></i> Register</a>
+				<div class="text-dark fs-3" ><a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i></a></div>
+			</form>
+		</div>
+		
+		
+
+	</div>
+</div>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbg " >
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+       
+        <li class="nav-item ">
+          <a class="nav-link active " href="#"><i class="bi bi-book-fill"></i> Resent book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="bi bi-book"></i> New book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="bi bi-journal-album"></i> old book</a>
+        </li>
+        
+      </ul>
+      <form class="form-inline gap" >
+        <button class="btn btn-light" type="submit"><i class="bi bi-person-fill-gear"></i> Settings</button>
+        <button class="btn btn-light" type="submit"><i class="bi bi-person-lines-fill"></i> Contact us</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+	<div class="container-fluid bg-img">
+		<h1 class="book display-4 fw-bold">E-book Management System</h1>
+	</div>
+<!--start Recent book  -->
+	<div class="container p-1">
+		<h2 class="text-center mb-4 mt-3">Recent book</h2>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/java.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Java programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/hacking.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Hacking</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/linux.jpeg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">linux programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/C.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">C programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mt-3"><a href="#" class="btn btn-danger btn-sm">View all</a></div>
+		<hr>
+	</div>
+<!--End Recent book  -->
+
+<!--start New book  -->
+	<div class="container p-1">
+		<h2 class="text-center mb-4 ">New book</h2>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/java.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Java programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/hacking.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Hacking</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/linux.jpeg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">linux programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/C.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">C programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							<a href="#" class="btn btn-danger btn-sm"><i class="bi bi-cart-plus"></i> Add Cart</a>
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mt-3"><a href="#" class="btn btn-danger btn-sm">View all</a></div>
+		<hr>
+	</div>
+<!--End New book  -->
+
+<!--start Old book  -->
+	<div class="container p-1">
+		<h2 class="text-center mb-4">Old book</h2>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/java.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Java programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/hacking.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">Hacking</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/linux.jpeg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">linux programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="card crd-ho">
+					<div class="card-body text-center ">
+						<img src="books/C.jpg" class="img-fluid e-books mb-2" alt="">
+						<p class="mb-0">C programming</p>
+						<p class="mb-0">Balaguruswamy</p>
+						<p class="mb-2">Categories:New</p>
+						<div>
+							
+							<a href="#" class="btn btn-success btn-sm">View details</a> 
+							<a href="#"	class="btn btn-danger btn-sm"><i class="bi bi-currency-rupee"></i> 200</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mt-3"><a href="#" class="btn btn-danger btn-sm">View all</a></div>
+		
+	</div>
+<!--End Old book  -->
+
+	<!-- <%@include file="allcomponents/footer.jsp"%>	 -->
+    <div class="container-fluid d-flex justify-content-between align-items-center navbg p-2 mb-0">
+
+        <div>
+            <h6 class="text-light">Contact :</h6>
+            <a class="text-light"><i class="bi bi-envelope-at"></i>
+                revanth61@gmail.com</a>
+        </div>
+    
+        <div class="text-center">
+            <h6 class="text-center text-light">@Copyright designed &
+                developed rk technologiess</h6>
+        </div>
+    
+        <div>
+            <h6 class="text-light">Follow on:</h6>
+            <div class="d-flex gap pointer">
+                <a class="text-light pointer"><i class="bi bi-instagram"></i></a> 
+                <a class="text-light"><i class="bi bi-twitter-x"></i></a> 
+                <a class="text-light"><i class="bi bi-linkedin"></i></a> 
+                <a class="text-light"><i class="bi bi-facebook"></i></i></a>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
